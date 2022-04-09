@@ -29,6 +29,7 @@ describe('[Challenge] Truster', function () {
 
     it('Exploit', async function () {
         /** CODE YOUR EXPLOIT HERE  */
+        //Can do an approval in the code and then transferFrom to the attacker
     });
 
     after(async function () {
