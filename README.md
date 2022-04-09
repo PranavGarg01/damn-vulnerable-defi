@@ -1,3 +1,7 @@
+# My solutions to damnvulnerabledefi.xyz
+I solved all the https://damnvulnerabledefi.xyz/ challenges. Some of them were easy, so I did not write any code for them. I might publish a writeup for these challenges, someday. 
+ 
+
 ![](cover.png)
 
 **A set of challenges to hack implementations of DeFi in Ethereum.**
